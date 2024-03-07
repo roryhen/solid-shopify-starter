@@ -1,0 +1,19 @@
+{
+  "name": "oranges-plus",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently npm:dev:*",
+    "dev:shopify": "shopify theme dev --store=$npm_package_name",
+    "dev:vite": "vite build --watch",
+    "pull": "shopify theme pull --development --nodelete --store=$npm_package_name",
+    "push": "shopify theme push --store=$npm_package_name"
+  },
+  "devDependencies": {
+    "@shopify/cli": "^3.55.4",
+    "@shopify/theme": "^3.55.4",
+    "concurrently": "^8.2.2",
+    "solid-js": "^1.8.14",
+    "vite": "^5.1.0",
+    "vite-plugin-solid": "^2.9.1"
+  }
+}

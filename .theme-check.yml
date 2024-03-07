@@ -1,3 +1,7 @@
+ignore:
+  - '**/node_modules/**'
+  - '/*.json'
+
 MatchingTranslations:
   enabled: false
 TemplateLength:

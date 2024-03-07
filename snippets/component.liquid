@@ -1,0 +1,12 @@
+{% comment %}
+  Renders a Component
+
+  Accepts:
+  - name: {String} Component name
+  
+  Usage:
+  {% render 'component', name: 'HelloWorld' %}
+{% endcomment %}
+
+<script src="{{ name | append: '.js' | asset_url }}" type="module"></script>
+<div id="{{ name }}"></div>
