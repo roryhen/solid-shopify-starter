@@ -12,13 +12,18 @@ export default defineConfig({
     // devtools(),
     solidPlugin(),
   ],
+  css: {
+    transformer: 'lightningcss',
+  },
   build: {
     target: 'esnext',
     outDir: './assets',
     emptyOutDir: false,
     lib: {
       formats: ['es'],
-      entry: readdirSync('./components').map((fileName) => `./components/${fileName}`),
+      entry: readdirSync('./components')
+        .filter((fileName) => fileName.endsWith('.jsx'))
+        .map((fileName) => `./components/${fileName}`),
       fileName: (_, entryName) => `${entryName}.js`,
     },
     rollupOptions: {

@@ -8,12 +8,12 @@
     "pull": "shopify theme pull --development --nodelete --store=$npm_package_name",
     "push": "shopify theme push --store=$npm_package_name"
   },
-  "devDependencies": {
-    "@shopify/cli": "^3.55.4",
-    "@shopify/theme": "^3.55.4",
+  "dependencies": {
+    "@shopify/cli": "^3.58.0",
+    "@shopify/theme": "^3.58.0",
     "concurrently": "^8.2.2",
-    "solid-js": "^1.8.14",
-    "vite": "^5.1.0",
-    "vite-plugin-solid": "^2.9.1"
+    "solid-js": "^1.8.16",
+    "vite": "^5.2.6",
+    "vite-plugin-solid": "^2.10.2"
   }
 }
